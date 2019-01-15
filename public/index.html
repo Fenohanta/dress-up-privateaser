@@ -2,22 +2,43 @@
 <html>
   <head>
     <title>CSS/HTML Workshop with Privateaser</title>
+    <meta charset='UTF-8'/>
+    <title>Dummy</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" />
+   
   </head>
-  <body>
-    <div id="bar">
-      <input class="name" type="text" placeholder="Bar name"/>
-      <input class="price-by-hour" type="number" placeholder="Price by hour"/>
-      <input class="price-by-person" type="number" placeholder="Price by person"/>
-    </div>
-    <div id="booker">
-      <input class="name" type="text" placeholder="Booker name"/>
-      <input class="time" type="number" placeholder="Time in h"/>
-      <input class="persons" type="number" placeholder="Persons"/>
-      <input class="option" type="checkbox" placeholder="Deductible option"/>
-    </div>
-    <button id="compute">Compute</button>
-    <div id="actors"></div>
-    <script src="privateaser.js"></script>
-    <script src="index.js"></script>
+  <body style="background-color:#F7F7F7;"  >
+    <div class="container" style="background-color:#BABFC5; width: 500px; margin:0 auto;" >
+      <div id="header" class="header" align="center" >
+          <img src="PictoPrivateaserWeb-small.png" alt="logo" height="42" width="42" >
+          <h1 style="color:#36D7B7" >Privateaser</h1>
+      </div>
+        <div>
+            <h3 align="center"style="color:#2C3E50">Transactions</h3>
+        </div>
+        <div id="tableau" align="center" styles="margin:20px">
+          <div id="bar" class="card"style="width:20rem" >
+            <h3 align="center" style="color:#2C3E50">Bar</h3>
+            <input class="name" type="text" placeholder="Bar name"/>
+            <input class="price-by-hour" type="number" placeholder="Price by hour"/>
+            <input class="price-by-person" type="number" placeholder="Price by person"/>
+          </div>
+          <div id="booker" class="card"style="width:20rem" align="center">
+            <h3 style="color:#2C3E50">Booker</h3>
+            <input class="name" type="text" placeholder="Booker name"/>
+            <input class="time" type="number" placeholder="Time in h"/>
+            <input class="persons" type="number" placeholder="Persons"/>
+            <input class="option" type="checkbox" placeholder="Deductible option"/>
+          </div>
+        </div>
+        <button id="compute"  align="center" margin="80px" width="10%" >Compute</button>
+        <div id="actors"></div>
+        <script src="privateaser.js"></script>
+        <script src="index.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  </div>      
   </body>
 </html>
